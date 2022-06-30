@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/bxlcnt/ftoProc.sh
+*  /This File/ :: /bisos/git/bxRepos/bxlcnt/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
     exit $?
 fi
 ####+END:
@@ -58,9 +58,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 bxtex
-facilities
-results
 overview
+results
+facilities
 "
 # }}} DBLOCK-nodesList
 ####+END:
